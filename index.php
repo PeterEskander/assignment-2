@@ -8,4 +8,13 @@
 	print_r($year);
 	$date =  date('Y/m/d', time());
 	echo "The value of \$date: ".$date."<br>";
+	if ($date < $tar) {
+		echo "the past"
+	}
+	else if ($date == $tar) {
+		echo "Oops";
+	}
+	elseif ($date > $tar) {
+		echo "The future";
+	}
 ?>
